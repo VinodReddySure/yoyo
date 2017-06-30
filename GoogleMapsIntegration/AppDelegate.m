@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import <GoogleMaps/GoogleMaps.h>
+#import <GooglePlaces/GooglePlaces.h>
 
 @interface AppDelegate ()
 
@@ -17,6 +19,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [GMSServices provideAPIKey:@"AIzaSyAZBvGnlTQP4-hWRCOLlfXKeGV9xi-lexs"];
+    [GMSPlacesClient provideAPIKey:@"AIzaSyAZBvGnlTQP4-hWRCOLlfXKeGV9xi-lexs"];
+
     return YES;
 }
 

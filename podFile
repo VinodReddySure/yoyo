@@ -1,0 +1,4 @@
+target 'GoogleMapsIntegration' do
+pod 'GoogleMaps'
+pod 'GooglePlaces'
+end
